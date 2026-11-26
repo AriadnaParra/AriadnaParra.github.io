@@ -6,6 +6,7 @@
 <title>Ariadna Parra — Data Analyst</title>
 <meta name="description" content="Portafolio de Ariadna Parra, Data Analyst especializada en limpieza de datos, SQL, Python y dashboards para decisiones de negocio.">
 <link rel="stylesheet" href="assets/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 </head>
 <body>
 
@@ -81,6 +82,15 @@
         <li>Conclusión estadísticamente respaldada sobre el cambio de checkout (no se encontró diferencia significativa en conversión).</li>
         <li>Proyecto evaluado y <strong>aprobado</strong> por el equipo de revisión de TripleTen.</li>
       </ul>
+      <h4>Resultados en gráficas</h4>
+      <div class="charts-grid">
+        <div class="chart-box">
+          <canvas id="chart-rappi-revenue"></canvas>
+        </div>
+        <div class="chart-box">
+          <canvas id="chart-rappi-category"></canvas>
+        </div>
+      </div>
       <a class="project-link" href="https://github.com/AriadnaParra/rappiplus-strategic-diagnosis" target="_blank" rel="noopener">Ver repositorio completo →</a>
     </div>
 
@@ -105,6 +115,12 @@
         <li>Conclusión clara y defendible sobre si la diferencia de conversión observada es real o producto del azar.</li>
         <li>Proyecto evaluado y <strong>aprobado</strong> por el equipo de revisión de TripleTen.</li>
       </ul>
+      <h4>Resultados en gráficas</h4>
+      <div class="charts-grid">
+        <div class="chart-box">
+          <canvas id="chart-ab-conversion"></canvas>
+        </div>
+      </div>
       <a class="project-link" href="https://github.com/AriadnaParra/hypothesis-testing" target="_blank" rel="noopener">Ver repositorio completo →</a>
     </div>
 
@@ -130,6 +146,15 @@
         <li>Identificación de las etapas críticas de pérdida de usuarios y de los países con mejor/peor retención.</li>
         <li>Proyecto evaluado y <strong>aprobado</strong> por el equipo de revisión de TripleTen.</li>
       </ul>
+      <h4>Resultados en gráficas</h4>
+      <div class="charts-grid">
+        <div class="chart-box">
+          <canvas id="chart-funnel"></canvas>
+        </div>
+        <div class="chart-box">
+          <canvas id="chart-retention"></canvas>
+        </div>
+      </div>
       <a class="project-link" href="https://github.com/AriadnaParra/sql-user-journeys" target="_blank" rel="noopener">Ver repositorio completo →</a>
     </div>
   </div>
@@ -187,5 +212,6 @@
   </div>
 </footer>
 
+<script src="assets/charts.js"></script>
 </body>
 </html>
