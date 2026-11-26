@@ -189,9 +189,13 @@ h2 {
 
 .charts-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   margin-top: 10px;
+}
+
+.charts-grid:has(.chart-box:only-child) {
+  grid-template-columns: 1fr;
 }
 
 .chart-box {
@@ -201,6 +205,12 @@ h2 {
   padding: 16px;
   height: 240px;
   position: relative;
+}
+
+@media (max-width: 640px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .more-projects {
